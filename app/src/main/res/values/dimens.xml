@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_title">20dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="width_bt_main">137.9dp</dimen>
+    <dimen name="height_bt_main">126.7dp</dimen>
+    <dimen name="star">20dp</dimen>
+    <dimen name="mg_star">5dp</dimen>
+    <dimen name="img_quiz_margin">20dp</dimen>
+    <dimen name="img_quiz_padding">10dp</dimen>
+    <dimen name="img_quiz_size">120dp</dimen>
+    <dimen name="mg_right_answer">5dp</dimen>
+    <dimen name="width_answer">80dp</dimen>
+    <dimen name="height_anaswer">40dp</dimen>
+    <dimen name="text_size_anaswer">14sp</dimen>
+</resources>

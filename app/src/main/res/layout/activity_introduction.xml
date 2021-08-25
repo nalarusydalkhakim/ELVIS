@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_intro"
+    tools:context=".IntroductionActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_title"
+        android:text="Introduction"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="157dp"
+        android:layout_height="197dp"
+        android:src="@drawable/chara_dina"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <ImageView
+        android:id="@+id/bt_setting"
+        android:layout_width="20dp"
+        android:layout_height="26dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/bt_sound_of"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="148dp"
+        android:layout_height="211dp"
+        android:layout_marginLeft="-10dp"
+        android:src="@drawable/chara_dani"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="528dp"
+        android:layout_height="299dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ballon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sapa"
+        android:layout_width="393dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="96dp"
+        android:gravity="center_vertical"
+        android:text="Hello, we are Dani and Dona....... \n welcome to ELVIS Easy Learning Vocabulary for Student. This game was develop as a result of research and thesis. This game will invite you to learn English vocabulary interactively. "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bt_back"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_next" />
+
+    <ImageView
+        android:id="@+id/bt_next"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/bt_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

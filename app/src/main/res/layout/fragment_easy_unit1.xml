@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_unit_1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Easy.EasyUnit1Fragment">
+
+    <ImageView
+        android:id="@+id/bt_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/left_arrow"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="148dp"
+        android:layout_height="211dp"
+        android:layout_marginLeft="-10dp"
+        android:src="@drawable/chara_dani"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_setting"
+        android:layout_width="32.5dp"
+        android:layout_height="32.5dp"
+        android:src="@drawable/bt_sound_of"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="00:00"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/text_soal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_progress_details"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressTint="#FFA000"
+            android:indeterminate="false"
+            android:max="5"
+            android:minHeight="50dp"
+            android:progress="0"></ProgressBar>
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColorHint="#7A8089"
+            android:textSize="18sp"
+            tools:text="0/5"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="@dimen/img_quiz_size"
+            android:layout_height="@dimen/img_quiz_size"
+            android:background="@drawable/bg_answer"
+            android:padding="@dimen/img_quiz_padding"
+            android:layout_marginRight="@dimen/img_quiz_margin"
+            android:src="@drawable/img_jacket" />
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="@dimen/img_quiz_size"
+            android:layout_height="@dimen/img_quiz_size"
+            android:background="@drawable/bg_answer"
+            android:padding="@dimen/img_quiz_padding"
+            android:src="@drawable/img_map" />
+
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="@dimen/img_quiz_size"
+            android:layout_height="@dimen/img_quiz_size"
+            android:background="@drawable/bg_answer"
+            android:padding="@dimen/img_quiz_padding"
+            android:layout_marginLeft="@dimen/img_quiz_margin"
+            android:src="@drawable/img_basket" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question :"
+        android:textSize="16sp"
+        android:textColor="@color/text_soal"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_question"
+        app:layout_constraintEnd_toEndOf="@+id/tv_question"
+        app:layout_constraintStart_toStartOf="@+id/tv_question" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bg_white_rounded"
+        android:gravity="center"
+        android:text="Jacket"
+        android:textColor="@color/text_soal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_submit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/bt_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

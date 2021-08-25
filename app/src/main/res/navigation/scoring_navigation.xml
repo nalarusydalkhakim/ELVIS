@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scoring_navigation"
+    app:startDestination="@id/nav_scoring">
+
+    <fragment
+        android:id="@+id/nav_scoring"
+        android:name="com.example.elvis.Fragments.Scoring.ScoringFragment"
+        android:label="fragment_scoring"
+        tools:layout="@layout/fragment_scoring" >
+        <action
+            android:id="@+id/action_nav_scoring_to_nav_pass"
+            app:destination="@id/nav_pass" />
+        <action
+            android:id="@+id/action_nav_scoring_to_nav_failed"
+            app:destination="@id/nav_failed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pass"
+        android:name="com.example.elvis.Fragments.Scoring.PassFragment"
+        android:label="fragment_pass"
+        tools:layout="@layout/fragment_pass" >
+        <action
+            android:id="@+id/action_nav_pass_to_nav_scoring"
+            app:destination="@id/nav_scoring" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_failed"
+        android:name="com.example.elvis.Fragments.Scoring.FailedFragment"
+        android:label="fragment_failed"
+        tools:layout="@layout/fragment_failed" >
+        <action
+            android:id="@+id/action_nav_failed_to_nav_scoring"
+            app:destination="@id/nav_scoring" />
+    </fragment>
+</navigation>

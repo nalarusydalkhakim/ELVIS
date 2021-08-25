@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_main"
+    tools:context=".Fragments.Easy.EasyUnit3Fragment">
+
+    <ImageView
+        android:id="@+id/bt_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="141dp"
+        android:src="@drawable/chara_dani"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_setting"
+        android:layout_width="32.5dp"
+        android:layout_height="32.5dp"
+        android:src="@drawable/bt_sound_of"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_tts"
+        android:layout_width="337.75dp"
+        android:layout_height="319dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/img_tts_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/layout_question"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_tts"
+        app:layout_constraintTop_toBottomOf="@+id/bt_setting">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="40dp"
+            android:textSize="14sp"
+            android:text="1. Borobudur is a ....\n2. Shelter when climbing mountains\n3. I will be on vacation to Sumatra using....\n4. The weather is very ..... the sky looks blue\n5. Where to store clothes on the go\n6. Sanur is beautiful ..... in Bali\n7. Opponent word turn left\n8. Cool highlands\n9. I bought ..... to take the train to Bandung\n10. .... It's a tool for knowing your location."
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/et_answer"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_answer_text"
+        android:gravity="center"
+        android:hint="Type Here"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_tts"
+        app:layout_constraintTop_toBottomOf="@+id/layout_question" />
+
+    <TextView
+        android:id="@+id/tv_current_quiz"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_selected_answer_text"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_answer"
+        app:layout_constraintEnd_toStartOf="@+id/et_answer"
+        app:layout_constraintTop_toTopOf="@+id/et_answer" />
+
+
+    <ImageView
+        android:id="@+id/bt_submit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/bt_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_tts"
+        app:layout_constraintTop_toBottomOf="@+id/et_answer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

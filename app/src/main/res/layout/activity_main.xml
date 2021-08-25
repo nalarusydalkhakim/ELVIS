@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="275dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/chara_dina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bt_easy"
+                android:layout_width="@dimen/width_bt_main"
+                android:layout_height="@dimen/height_bt_main"
+                android:src="@drawable/bt_easy" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/easy_star_1"
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:layout_marginRight="@dimen/mg_star"
+                    android:src="@drawable/star_silver" />
+
+                <ImageView
+                    android:id="@+id/easy_star_2"
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:layout_marginRight="@dimen/mg_star"
+                    android:src="@drawable/star_silver" />
+
+                <ImageView
+                    android:id="@+id/easy_star_3"
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:src="@drawable/star_silver" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bt_middle"
+                android:layout_width="@dimen/width_bt_main"
+                android:layout_height="@dimen/height_bt_main"
+                android:src="@drawable/bt_middle" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:layout_marginRight="@dimen/mg_star"
+                    android:src="@drawable/star_silver" />
+
+                <ImageView
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:layout_marginRight="@dimen/mg_star"
+                    android:src="@drawable/star_silver" />
+
+                <ImageView
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:src="@drawable/star_silver" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_bt_main"
+                android:layout_height="@dimen/height_bt_main"
+                android:src="@drawable/bt_hard" />
+
+            <LinearLayout
+                android:id="@+id/bt_hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:layout_marginRight="@dimen/mg_star"
+                    android:src="@drawable/star_silver" />
+
+                <ImageView
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:layout_marginRight="@dimen/mg_star"
+                    android:src="@drawable/star_silver" />
+
+                <ImageView
+                    android:layout_width="@dimen/star"
+                    android:layout_height="@dimen/star"
+                    android:src="@drawable/star_silver" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bt_setting"
+        android:layout_width="20dp"
+        android:layout_height="26dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/bt_sound_of"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_help"
+        android:layout_width="99dp"
+        android:layout_height="32.5dp"
+        android:src="@drawable/bt_help"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_setting"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/bt_about"
+        android:layout_width="99dp"
+        android:layout_height="32.5dp"
+        android:src="@drawable/bt_about"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_help"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_white"
+        android:gravity="center"
+        android:text="300"
+        android:textColor="#D18A6D"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Score :"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tv_score"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

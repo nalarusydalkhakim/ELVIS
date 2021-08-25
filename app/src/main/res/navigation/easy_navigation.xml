@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easy_navigation"
+    app:startDestination="@id/nav_easy">
+
+    <fragment
+        android:id="@+id/nav_easy"
+        android:name="com.example.elvis.Fragments.Easy.EasyFragment"
+        android:label="fragment_easy"
+        tools:layout="@layout/fragment_easy" >
+        <action
+            android:id="@+id/action_nav_easy_to_nav_easy_unit1"
+            app:destination="@id/nav_easy_unit1" />
+        <action
+            android:id="@+id/action_nav_easy_to_nav_easy_unit2"
+            app:destination="@id/nav_easy_unit2" />
+        <action
+            android:id="@+id/action_nav_easy_to_nav_easy_unit3"
+            app:destination="@id/nav_easy_unit3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_easy_unit1"
+        android:name="com.example.elvis.Fragments.Easy.EasyUnit1Fragment"
+        android:label="fragment_easy_unit1"
+        tools:layout="@layout/fragment_easy_unit1" >
+        <action
+            android:id="@+id/action_nav_easy_unit1_to_nav_easy"
+            app:destination="@id/nav_easy" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_easy_unit2"
+        android:name="com.example.elvis.Fragments.Easy.EasyUnit2Fragment"
+        android:label="fragment_easy_unit2"
+        tools:layout="@layout/fragment_easy_unit2" >
+        <action
+            android:id="@+id/action_nav_easy_unit2_to_nav_easy"
+            app:destination="@id/nav_easy" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_easy_unit3"
+        android:name="com.example.elvis.Fragments.Easy.EasyUnit3Fragment"
+        android:label="fragment_easy_unit3"
+        tools:layout="@layout/fragment_easy_unit3" >
+        <action
+            android:id="@+id/action_nav_easy_unit3_to_nav_easy"
+            app:destination="@id/nav_easy" />
+    </fragment>
+</navigation>
